@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	h4{
+		margin-bottom: 2em;
+	}
+}
+
+
+#nav-color{
+	background-color:$nav_color;
+}
+.fixmargin{
+	margin-bottom:0;
+}
+.circulo{
+	background-color: $background_circulo;
+	border-top: 0.3em solid #000;
+	img{
+		@include circle( 200px, $border);
+	}
+	.readmore{
+		@include boton();
+	}
+	
+}
+.welcome{
+	border-top:0.3em solid #f0e5a7;
+	padding: 5em;
+	background-color: $background_welcome;
+	img{
+		border-radius:1em;
+	}
+	h3{	
+		color: $color_text_welcome;
+	}
+	.list-welcome{
+		list-style-image: url("http://estaticos00.farodevigo.es/elementosWeb/mediaweb/images/iconos/meneame1vs2.png");	
+	}
+}
+.section-about{
+	padding: 5em;
+	background-color:$background_about;
+	color: $color_text_about;
+	.float-left{
+		clear: fix;
+		img{
+			float: left;
+			border-radius: 1.5em;
+			margin: 3em;
+		}
+	}
+	.side-right{
+		clear:fix;
+		img{
+			float: right;
+			border-radius: 1.5em;
+			margin: 3em;
+		}
+	}
+}
+.footing{
+	background-color:$nav_color;
+	.red-social{
+		@include red-social();
+		img{
+			width: 4em;
+			height: 4em;
+		}
+	}	
+}

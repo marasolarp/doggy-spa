@@ -1,0 +1,24 @@
+@mixin circle($size, $color) {
+	width: $size;
+	height: $size;
+	border: 0.7em solid $color;
+	z-index: 3;
+	position: relative;
+	top: -5em;
+	
+}
+@mixin boton() {
+	border: none;
+	background-color: #F5DA81;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}	
+@mixin red-social(){
+	border:0.7 solid #FF8000;
+	background-color: $color_text_about;
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	margin: 2em;
+	border-radius: 50%;
+}	
